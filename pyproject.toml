@@ -1,0 +1,24 @@
+[project]
+name = "cartographie"
+version = "0.1.0"
+description = "Atelier cartographie Data For Good"
+requires-python = ">=3.10"
+
+dependencies = [
+    "jupyter",
+    "notebook==6.4.8",
+    "jupyter-server",
+    "traitlets==5.9.0",
+    "matplotlib",
+    "cartopy",
+    "geopandas",
+    "folium",
+    "mapclassify",
+    "plotly"
+]
+
+[project.optional-dependencies]
+lite = [
+    "jupyterlite",
+    "jupyterlite-xeus-python"
+]
