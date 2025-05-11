@@ -32,7 +32,6 @@ jobs:
       - name: Build the JupyterLite site
         run: |
           mkdir -p content
-          cp README.md content || true
           cp -r notebooks content
           .venv/bin/jupyter lite build --contents content --output-dir dist
 
